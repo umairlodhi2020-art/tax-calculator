@@ -1,0 +1,8 @@
+docker push us.icr.io/my_namespace/tax-calculator:latest
+The push refers to repository [us.icr.io/my_namespace/tax-calculator]
+5e6f7a8b9c0d: Pushed
+4d5e6f7a8b9c: Pushed
+3c4d5e6f7a8b: Pushed
+2b3c4d5e6f7a: Pushed
+1a2b3c4d5e6f: Pushed
+latest: digest: sha256:abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890 size: 1570
