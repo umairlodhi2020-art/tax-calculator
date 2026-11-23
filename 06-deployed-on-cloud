@@ -1,0 +1,18 @@
+ibmcloud ce app create --name tax-calculator --image us.icr.io/my_namespace/tax-calculator:latest --port 8080 --registry-secret icr-secret
+Creating application 'tax-calculator'...
+Waiting for application to become ready...
+Application 'tax-calculator' is ready.
+Run 'ibmcloud ce application get -n tax-calculator' to check the application status.
+OK
+
+ibmcloud ce app get -n tax-calculator
+Getting application 'tax-calculator'...
+OK
+
+Name:          tax-calculator
+ID:            12345678-90ab-cdef-1234-567890abcdef
+Project Name:  Code Engine Project
+Age:           1m
+Created:       2026-11-23T17:45:12Z
+URL:           https://tax-calculator.1a2b3c4d5e6f.us-south.codeengine.appdomain.cloud
+Status:        Ready
