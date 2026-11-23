@@ -1,0 +1,18 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: cd-pipeline-run-
+spec:
+  pipelineRef:
+    name: cd-pipeline
+  params:
+    - name: repo-url
+      value: https://github.com/<your-username>/<your-repo-name>.git
+    - name: branch-name
+      value: main
+    - name: build-image
+      value: image-registry.openshift-image-registry.svc:5000/<your-namespace>/<your-app-name>:latest
+  workspaces:
+    - name: pipeline-workspace
+      persistentVolumeClaim:
+        claimName: pipelinerun-pvc
